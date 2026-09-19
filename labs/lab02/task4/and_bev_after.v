@@ -4,5 +4,5 @@ module and_beh_before (
     output reg y
 );
     always @(*)
-        #1 y = a & b;
+        #1 y = a &b;
 endmodule
