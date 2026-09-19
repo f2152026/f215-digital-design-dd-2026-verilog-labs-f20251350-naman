@@ -53,7 +53,7 @@ module tb;
 
   
   always @(t_a, t_b) begin
-    #1;
+    #1
     if ({t_gt,t_lt,t_eq} !== {exp_gt,exp_lt,exp_eq}) begin
       $display("FAIL at time %0t: A=%b B=%b  got GT=%b LT=%b EQ=%b  expected GT=%b LT=%b EQ=%b",
            $time, t_a, t_b, t_gt, t_lt, t_eq, exp_gt, exp_lt, exp_eq);
